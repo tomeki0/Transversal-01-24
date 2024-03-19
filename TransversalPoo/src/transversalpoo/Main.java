@@ -4,7 +4,7 @@ import java.util.Scanner; //Biblioteca pra lermos informações
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String args[]) {
 		
 		//Constantes 
 		final int qtde_dias = 5;
@@ -64,6 +64,9 @@ public class Main {
 		
 		//Calculando a media 
 		media_temp = soma_temp / (float) qtde_dias;
+
+		//Fechando o Scanner
+		ler.close();
 		
 		//Laço pra verificar a qtde de dias com temperatura maior ou menor que a media
 		System.out.println("\nImprimindo todas as temperaturas informadas");
@@ -90,5 +93,6 @@ public class Main {
 				System.out.println(media_temp + "°C é considerado um clima frio.");
 			else
 				System.out.println(media_temp + "°C é considerado um clima moderado.");
-		}	
+		}
+	
 }
